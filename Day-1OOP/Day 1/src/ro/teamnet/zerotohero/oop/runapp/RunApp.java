@@ -1,6 +1,7 @@
 package ro.teamnet.zerotohero.oop.runapp;
 
 import ro.teamnet.zerotohero.MyException;
+import ro.teamnet.zerotohero.NestedException;
 import ro.teamnet.zerotohero.canvas.Canvas;
 import ro.teamnet.zerotohero.oop.graphicshape.*;
 
@@ -12,6 +13,15 @@ public class RunApp {
     public static void show() throws MyException{
         System.out.println("Show() called");
         throw new MyException();
+    }
+
+    public static void doSmt() throws NestedException{
+        try{
+            RunApp.show();
+        }
+        catch (MyException e){
+            throw new NestedException();
+        }
     }
 
     public static void main(String[] args) {
@@ -34,11 +44,11 @@ public class RunApp {
         System.out.println("p1 equals p2 is " + p1.equals(p2));
         System.out.println("p1 equals p3 is " + p1.equals(p3));
 
-        try {
-            RunApp.show();
+        try{
+            RunApp.doSmt();
         }
-        catch (MyException e){
-            System.out.println("Exception handled");
+        catch (NestedException e){
+            System.out.println(e.date);
         }
     }
 }
