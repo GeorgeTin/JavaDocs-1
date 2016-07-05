@@ -48,5 +48,6 @@ public class Exercise0 {
         // TODO Exercise #0 e) Create a new instance of Exercise0 class and call the iterateThroughList() method
         Exercise0 ex = new Exercise0();
         ex.iterateThroughList();
+
     }
 }
