@@ -1,7 +1,9 @@
 package ro.teamnet.zth.api.em;
 
 import javax.management.Query;
+import java.sql.Connection;
 import java.sql.Date;
+import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -75,7 +77,7 @@ public class QueryBuilder {
         for (Condition cond : conditions)
             sb.append(cond.getColumnName() + "=" + getValueForQuery(cond.getValue()) + ",");
         sb.deleteCharAt(sb.length() - 1);
-
+       
         return sb;
     }
 

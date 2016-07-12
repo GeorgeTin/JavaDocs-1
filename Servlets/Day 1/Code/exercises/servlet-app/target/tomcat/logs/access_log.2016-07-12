@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [12/Jul/2016:13:24:32 +0300] "GET /servlet-app/info HTTP/1.1" 200 580 http-bio-8090-exec-1 33
+0:0:0:0:0:0:0:1 - - [12/Jul/2016:13:24:40 +0300] "GET /servlet-app/info HTTP/1.1" 200 580 http-bio-8090-exec-2 1
