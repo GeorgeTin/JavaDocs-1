@@ -41,7 +41,7 @@ public class LocationDao {
      * @return a list of locations
      */
     public List<Location> getAllLocations() {
-        EntityManager entityManager = new EntityManagerImpl();
+        //EntityManager entityManager = new EntityManagerImpl();
         return entityManager.findAll(Location.class);
     }
 

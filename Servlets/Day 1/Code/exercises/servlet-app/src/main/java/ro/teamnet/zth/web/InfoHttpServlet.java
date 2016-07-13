@@ -1,6 +1,7 @@
 package ro.teamnet.zth.web;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,6 +28,24 @@ public class InfoHttpServlet extends HttpServlet {
             response+="</tr>";
         }
         response+="</table>";
+
+        response+="<br>";
+        response+="<span>";
+        response+=req.getMethod();
+        response+="</span>";
+        response+="<span>" + req.getQueryString() + "</span>";
+        response+="<br>";
+
+        /*response += "<table>";
+        Cookie[] cookies = req.getCookies();
+        for(Cookie cookie : cookies){
+            response+="<tr><td>";
+            response+=cookie.getName();
+            response+="</td><td>" + cookie.getValue() + "</td>";
+            response+="</tr>";
+        }
+        response+="</table>";*/
+
         resp.getWriter().write(response);
 
     }
