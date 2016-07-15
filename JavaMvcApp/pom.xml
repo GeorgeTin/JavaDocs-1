@@ -14,6 +14,7 @@
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <junit.version>4.11</junit.version>
         <ojdbc6.version>11.2.0</ojdbc6.version>
+        <jackson-jaxrs.version>1.9.13</jackson-jaxrs.version>
     </properties>
 
     <dependencies>
@@ -22,7 +23,6 @@
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
             <version>${ojdbc6.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -45,6 +45,12 @@
             <version>${javax.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>${jackson-jaxrs.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -67,6 +73,7 @@
                     <username>admin</username>
                     <password>admin</password>
                     <path>/app</path>
+                    <port>8090</port>
                 </configuration>
             </plugin>
 
