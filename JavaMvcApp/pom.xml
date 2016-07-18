@@ -73,7 +73,7 @@
                     <username>admin</username>
                     <password>admin</password>
                     <path>/app</path>
-                    <port>8090</port>
+                    <port>9090</port>
                 </configuration>
             </plugin>
 

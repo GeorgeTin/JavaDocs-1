@@ -3,9 +3,11 @@ package ro.teamnet.zth;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import ro.teamnet.zth.api.annotations.MyController;
+import ro.teamnet.zth.api.annotations.MyCreateParam;
 import ro.teamnet.zth.api.annotations.MyRequestMethod;
 
 import ro.teamnet.zth.api.annotations.MyRequestParam;
+import ro.teamnet.zth.appl.controller.EmployeeController;
 import ro.teamnet.zth.fmk.AnnotationScanUtils;
 import ro.teamnet.zth.fmk.MethodAttributes;
 
@@ -13,12 +15,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 
@@ -35,6 +39,7 @@ public class MyDispatcherServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
         //instructiuni de delegare
+
         dispatchReply("GET", req, resp);
     }
 
@@ -43,12 +48,20 @@ public class MyDispatcherServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doPost(req, resp);
         //instructiuni de delegare
+        //System.out.println(req.getReader().readLine());
+        //System.out.println(req.getReader().readLine());
+        //System.out.println(req.getParameter("id"));
+        //System.out.println(req.getContentType());
+
+        //req.getReader().
+        dispatchReply("POST", req, resp);
+
     }
 
     public void dispatchReply(String method, HttpServletRequest req, HttpServletResponse resp) {
         Object r = null;
         try {
-            r = dispatch(resp, req);
+            r = dispatch(method, resp, req);
         } catch (Exception e) {
             sendExceptionError(e, req, resp);
         }
@@ -58,6 +71,14 @@ public class MyDispatcherServlet extends HttpServlet {
             sendExceptionError(e, req, resp);
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //super.doDelete(req, resp);
+        //employeeController.deleteOneEmployee(Long.valueOf(req.getParameter("id")));
+        dispatchReply("DELETE", req, resp);
+
     }
 
     @Override
@@ -96,7 +117,7 @@ public class MyDispatcherServlet extends HttpServlet {
         }
     }
 
-    private Object dispatch(HttpServletResponse resp, HttpServletRequest req) throws ServletException, IOException {
+    private Object dispatch(String httpMethod, HttpServletResponse resp, HttpServletRequest req) throws ServletException, IOException {
         //resp.getWriter().write("A mers");
         String path = req.getPathInfo();
 
@@ -109,19 +130,34 @@ public class MyDispatcherServlet extends HttpServlet {
                 Object controllerInstance = controllerClass.newInstance();
 
                 Method method = controllerClass.getMethod(methAtt.getMethodName(), methAtt.getParameterTypes());
-                Parameter[] parameters = method.getParameters();
-                List<Object> parameterValues = new ArrayList<>();
-                for (Parameter param : parameters) {
-                    if (param.isAnnotationPresent(MyRequestParam.class)) {
-                        MyRequestParam annotation = param.getAnnotation(MyRequestParam.class);
-                        String name = annotation.name();
-                        String requestParamValue = req.getParameter(name);
-                        Class<?> type = param.getType();
-                        Object requestParamObject = new ObjectMapper().readValue(requestParamValue, type);
-                        parameterValues.add(requestParamObject);
+                if (method.getAnnotation(MyRequestMethod.class).methodType().equals(httpMethod)) {
+                    Parameter[] parameters = method.getParameters();
+                    List<Object> parameterValues = new ArrayList<>();
+                    for (Parameter param : parameters) {
+                        if (param.isAnnotationPresent(MyRequestParam.class)) {
+                            MyRequestParam annotation = param.getAnnotation(MyRequestParam.class);
+                            String name = annotation.name();
+                            String requestParamValue = req.getParameter(name);
+                            Class<?> type = param.getType();
+                            Object requestParamObject = requestParamValue;
+                            if (!type.equals(String.class))
+                                requestParamObject = new ObjectMapper().readValue(requestParamValue, type);
+                            parameterValues.add(requestParamObject);
+                        }
+                        if (param.isAnnotationPresent(MyCreateParam.class)) {
+                            //System.out.println(method.getName());
+                            BufferedReader buffReader = req.getReader();
+                            ObjectMapper mapper = new ObjectMapper();
+                            Class<?> type = param.getType();
+                            Object obj;
+                            obj = mapper.readValue(buffReader, type);
+                            parameterValues.add(obj);
+                        }
                     }
+
+
+                    return method.invoke(controllerInstance, parameterValues.toArray());
                 }
-                return method.invoke(controllerInstance, parameterValues.toArray());
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InstantiationException e) {

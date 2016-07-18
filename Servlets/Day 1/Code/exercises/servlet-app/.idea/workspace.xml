@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e280574-156a-4530-afff-1d16167b477d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-07-12" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ro/teamnet/zth/web/InfoHttpServlet.class" afterPath="$PROJECT_DIR$/target/classes/ro/teamnet/zth/web/InfoHttpServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/servlet-app.war" afterPath="$PROJECT_DIR$/target/servlet-app.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/servlet-app/WEB-INF/classes/ro/teamnet/zth/web/InfoHttpServlet.class" afterPath="$PROJECT_DIR$/target/servlet-app/WEB-INF/classes/ro/teamnet/zth/web/InfoHttpServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ro/teamnet/zth/web/InfoHttpServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ro/teamnet/zth/web/InfoHttpServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/tomcat/logs/access_log.2016-07-15" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp.war" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/MyDispatcherServlet.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/MyDispatcherServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/api/annotations/MyRequestMethod.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/api/annotations/MyRequestMethod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/controller/EmployeeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/service/EmployeeService.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/service/EmployeeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/service/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/classes/ro/teamnet/zth/appl/service/EmployeeServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/MyDispatcherServlet.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/MyDispatcherServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/api/annotations/MyRequestMethod.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/api/annotations/MyRequestMethod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/controller/EmployeeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/service/EmployeeService.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/service/EmployeeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/service/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/classes/ro/teamnet/zth/appl/service/EmployeeServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/MyDispatcherServlet.java" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/MyDispatcherServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/api/annotations/MyRequestMethod.java" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/api/annotations/MyRequestMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/controller/EmployeeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/service/EmployeeService.java" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/service/EmployeeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/service/EmployeeServiceImpl.java" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/java/ro/teamnet/zth/appl/service/EmployeeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/MVCApp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../../../../../JavaMvcApp/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../MVC/Workshop/JavaMvcApp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../../MVC/Workshop/JavaMvcApp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../Day 2/Code/exercises/jsp-app/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../Day 2/Code/exercises/jsp-app/.idea/workspace.xml" />
     </list>
     <ignored path="servlet-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -280,6 +291,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -426,9 +440,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -898,15 +909,16 @@
       <workItem from="1468308690290" duration="8168000" />
       <workItem from="1468349000026" duration="1362000" />
       <workItem from="1468390738324" duration="893000" />
+      <workItem from="1468823063527" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10423000" />
+    <option name="totallyTimeSpent" value="10437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -921,7 +933,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -973,6 +985,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/zero-to-hero.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/http-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/teamnet/zth/web/ZeroToHeroServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/teamnet/zth/web/HelloWorldServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/zero-to-hero.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           <folding />
@@ -983,9 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,9 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,9 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

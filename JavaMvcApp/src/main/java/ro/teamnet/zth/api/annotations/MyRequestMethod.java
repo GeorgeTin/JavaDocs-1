@@ -12,6 +12,5 @@ import java.lang.annotation.*;
 public @interface MyRequestMethod {
     String urlPath();
     String methodType() default "GET";
-    String id() default "";
 
 }

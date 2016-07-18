@@ -16,6 +16,9 @@ import java.util.List;
 @MyController(urlPath = "/employees")
 public class EmployeeController {
     private EmployeeService empService = new EmployeeServiceImpl();
+
+
+
     @MyRequestMethod(urlPath = "/all")
     public List<Employee> getAllEmployees(){
         return empService.findAllEmployees();
@@ -30,10 +33,18 @@ public class EmployeeController {
         //return null;
     }
 
-    @MyRequestMethod(urlPath = "/delete")
+    @MyRequestMethod(urlPath = "/delete", methodType = "DELETE")
     public Employee deleteOneEmployee(@MyRequestParam(name="id")Long id){
         Employee emp = empService.findOneEmployee(id);
         empService.deleteOneEmployee(id);
         return emp;
+    }
+
+    @MyRequestMethod(urlPath = "/save", methodType = "POST")
+    public Employee saveEmployee(@MyRequestParam(name="employee") String employee){
+        //empService.addEmployee(emp);
+        //return emp;
+        //System.out.println(employee);
+        return null;
     }
 }
